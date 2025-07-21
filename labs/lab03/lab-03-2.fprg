@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-2"/>
+        <attribute name="authors" value="lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:48:21 PM"/>
+        <attribute name="created" value="bGVub3ZvO0xBUFRPUC1GUVYxREpPNDsyMDI1LTA3LTIxOzEyOjE3OjU2IFBNOzMwMTI="/>
+        <attribute name="edited" value="bGVub3ZvO0xBUFRPUC1GUVYxREpPNDsyMDI1LTA3LTIxOzEyOjQ4OjIxIFBNOzExOzMxNjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BasicRate, ServiceCharge, TotalPerNight" type="Real" array="False" size=""/>
+            <assign variable="BasicRate" expression="250.00"/>
+            <assign variable="ServiceCharge" expression="0.15 * BasicRate"/>
+            <assign variable="TotalPerNight" expression="BasicRate + ServiceCharge"/>
+            <declare name="nNights" type="Integer" array="False" size=""/>
+            <input variable="nNights"/>
+            <declare name="TotalPayment" type="Real" array="False" size=""/>
+            <assign variable="TotalPayment" expression="TotalPerNight * nNights"/>
+            <output expression="TotalPayment" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
