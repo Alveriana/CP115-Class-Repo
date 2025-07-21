@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-6"/>
+        <attribute name="authors" value="lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 10:54:41 PM"/>
+        <attribute name="created" value="bGVub3ZvO0xBUFRPUC1GUVYxREpPNDsyMDI1LTA3LTIxOzEwOjM1OjAxIFBNOzMwMDA="/>
+        <attribute name="edited" value="bGVub3ZvO0xBUFRPUC1GUVYxREpPNDsyMDI1LTA3LTIxOzEwOjU0OjQxIFBNOzM7MzExNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="HouseAreaLength" type="Real" array="False" size=""/>
+            <declare name="HouseAreaWidth" type="Real" array="False" size=""/>
+            <declare name="BuiltInHouseAreaLength" type="Real" array="False" size=""/>
+            <declare name="BuiltInHouseAreaWidth" type="Real" array="False" size=""/>
+            <declare name="PricePerSquareMeter" type="Real" array="False" size=""/>
+            <declare name="HouseArea" type="Real" array="False" size=""/>
+            <declare name="BuiltInHouseArea" type="Real" array="False" size=""/>
+            <declare name="YardArea" type="Real" array="False" size=""/>
+            <declare name="MowingWage" type="Real" array="False" size=""/>
+            <assign variable="PricePerSquareMeter" expression="2.00"/>
+            <input variable="HouseAreaLength"/>
+            <input variable="HouseAreaWidth"/>
+            <input variable="BuiltInHouseAreaLength"/>
+            <input variable="BuiltInHouseAreaWidth"/>
+            <assign variable="HouseArea" expression="HouseAreaLength * HouseAreaWidth"/>
+            <assign variable="BuiltInHouseArea" expression="BuiltInHouseAreaLength * BuiltInHouseAreaWidth"/>
+            <assign variable="YardArea" expression="HouseArea - BuiltInHouseArea"/>
+            <assign variable="MowingWage" expression="YardArea * PricePerSquareMeter"/>
+            <output expression="&quot;Total area of yard to be mowed is:&quot; &amp; YardArea &amp; &quot;square meters&quot;" newline="True"/>
+            <output expression="&quot;The mowing wage of the house is:RM&quot; &amp; MowingWage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
