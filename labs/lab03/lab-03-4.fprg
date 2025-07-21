@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-4"/>
+        <attribute name="authors" value="lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 10:13:31 PM"/>
+        <attribute name="created" value="bGVub3ZvO0xBUFRPUC1GUVYxREpPNDsyMDI1LTA3LTIxOzA5OjU5OjQ0IFBNOzMwMjE="/>
+        <attribute name="edited" value="bGVub3ZvO0xBUFRPUC1GUVYxREpPNDsyMDI1LTA3LTIxOzEwOjEzOjMxIFBNOzU7MzExMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumberOfPages" type="Integer" array="False" size=""/>
+            <declare name="ServiceCharge, CostPerPage" type="Real" array="False" size=""/>
+            <assign variable="ServiceCharge" expression="3.00"/>
+            <assign variable="CostPerPage" expression="0.20"/>
+            <input variable="NumberOfPages"/>
+            <declare name="TotalCost" type="Real" array="False" size=""/>
+            <assign variable="TotalCost" expression="ServiceCharge + (NumberOfPages * CostPerPage)"/>
+            <output expression="&quot;Total cost for sending the international fax is : &quot; &amp; TotalCost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
