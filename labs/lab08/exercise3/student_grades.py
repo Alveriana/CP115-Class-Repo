@@ -10,11 +10,11 @@ total_grades = grades1 + grades2 + grades3 + grades4 + grades5
 average_grades = total_grades / 5
 
 # Percentage calculation
-percentage1 = (grades1 / 500) * 100
-percentage2 = (grades2 / 500) * 100
-percentage3 = (grades3 / 500) * 100
-percentage4 = (grades4 / 500) * 100
-percentage5 = (grades5 / 500) * 100
+percentage1 = (grades1 / total_grades) * 100
+percentage2 = (grades2 / total_grades) * 100
+percentage3 = (grades3 / total_grades) * 100
+percentage4 = (grades4 / total_grades) * 100
+percentage5 = (grades5 / total_grades) * 100
 
 print(f"grades1 = {grades1}, percentage1 = {percentage1}% ")
 print(f"grades2 = {grades2}, percentage2 = {percentage2}% ")
