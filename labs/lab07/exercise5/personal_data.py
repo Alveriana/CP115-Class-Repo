@@ -15,5 +15,5 @@ postcode = "62840"
 full_name_upper = full_name.upper()
 length_of_name = len(full_name)
 city_upper = city.upper()
-full_address = f"{264, Jalan Sky}, {Putrajya}, {62840}"
+full_address = f"{street_address}, {city}, {postcode}"
 full_address_length = len(full_address)
