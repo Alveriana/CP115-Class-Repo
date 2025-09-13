@@ -15,7 +15,7 @@ elif position < 0:
 else:
     moving_status = "At rest"
 
-# Print the results
+# Print results
 print(f" Height: {physics_calculator.building_height} m")
 print(f" Velocity: {velocity:.2f} m/s")
 print(f" Mass: {physics_calculator.ball_mass} kg")
