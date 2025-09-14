@@ -1,7 +1,7 @@
 # use personal_data.py
 import personal_data
 
-# use variables from personal_data.py
+# Use variables from personal_data.py
 print("=== Personal Information ===")
 print(f" Full Name: {personal_data.full_name}")
 print(f" Age: {personal_data.age}")
