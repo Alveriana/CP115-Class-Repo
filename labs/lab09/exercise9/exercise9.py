@@ -5,6 +5,8 @@ driving_score = int(input())
 medical_clearance = input()
 
 # TODO: Your code here
+requirement_met = 0
 
+if applicant_age >= 8 
 
 print(license_class)
