@@ -10,12 +10,11 @@ elif position == "Supervisor":
 elif position == "Staff":
     hourly_rate = 18
 
-overtime_rate = 1.5 * hourly_rate
+overtime_pay = 1.5 * overtime_hours * hourly_rate
 
 if is_weekend == "Yes":
-    overtime_rate += 5
+    overtime_pay += 6 * overtime_hours
 
-overtime_pay = overtime_hours * overtime_rate
 total_pay = overtime_pay
 
 print(hourly_rate)
